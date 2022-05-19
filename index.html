@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilos/normalize.css">
+  <link rel="stylesheet" href="./estilos/reset.css">
+  <link rel="stylesheet" href="./estilos/style.css">
+  <title>2Fast - Delivery Low-Cost</title>
+</head>
+<body>
+  <!-- HEADER -->
+    <div class="header-bg">
+      <header class="wrap js-menu">
+        <div class="logo">
+          <a href="#intro"><img src="img/logo/logo.png" alt="Logo da twofast"></a>
+        </div>
+        <nav id="nav">
+          <span class="menu-mobile" data-menu-mobile="menu">MENU</span>
+          <ul class="menu" data-menu-mobile="ul">
+            <li class="menu-item hv-efeito"><a href="#sobre">SOBRE</a></li>
+            <li class="menu-item hv-efeito"><a href="#orcamento">ORÇAMENTO</a></li>
+            <li class="menu-item hv-efeito"><a href="#faq">FAQ</a></li>
+            <li class="menu-item btn-header"><a href="#contacto">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <a href="#nav" class="back-top">▲</a>
+      </header>
+    </div>
+
+  <!-- INTRO -->  
+  <section class="intro wrap js-scroll" id="intro">
+    <article class="intro-info grid">
+      <h1 class="titulo">2 FAST DELIVERY</h1>
+      <h2 class="subtitulo">A melhor opção em entregas low-cost em Lisboa</h2>
+      <p class="intro-text">
+        Tenha suas encomendas entregues por nossa equipe de estafetas,
+        oferecemos um serviço premium por um preço que cabe no bolso.<br><br>
+        Com a 2FAST pode ficar tranquilo que a encomenda vai chegar no
+        destino final nas melhores condições, utilize do nosso sistema de Orçamento para cotar o valor da entrega e não ter surpresas
+        na cobrança.
+      </p>
+      <button class="cta">ORÇAMENTO</button>
+    </article class="grid">
+    <div class="intro-img">
+      <img src="img/fotos/ilustracao.svg" alt="ilustração de duas pessoas realizando a entrega de uma encomenda">
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <div class="bg-cinza-claro" id="sobre">
+    <section class="comofunciona wrap2 js-scroll2">
+      <div class="comofunciona-titulo grid">
+        <h1 class="titulo">COMO FUNCIONA ?</h1>
+        <h2 class="subtitulo">Saiba o valor da entrega de forma simples e rapida</h2>
+      </div>
+
+      <!-- LISTA DE ICONES-->
+      <!-- ITEM 01-->
+      <div class="lista-item item01">
+        <img src="img/icones/icone01.svg" alt="icone representando alfinete gps">
+        <h6 class="titulo-h6">Preencha os dados da entrega</h6>
+        <p>Utilizando nosso serviço de Orçamento basta preencher a morada de retirada da encomenda e a morada para entrega, que nosso sistema já calcula e mostra o valor da entrega</p>
+      </div>
+
+      <!-- ITEM 02-->
+      <div class="lista-item item02">
+        <img src="img/icones/icone02.svg" alt="icone de dedão pra cima - joinha">
+        <h6 class="titulo-h6">Verifique o valor e decida</h6>
+        <p>Apos preencher as informações o sistema ira retornar o valor do serviço, caso opte pelo serviço basta confirmar a mensagem</p>
+      </div>
+
+      <!-- ITEM 03-->
+      <div class="lista-item item03">
+        <img src="img/icones/icone03.svg" alt="icone representando atendimento callcenter">
+        <h6 class="titulo-h6">Entraremos em contacto</h6>
+        <p>Então um de nossos colaboradores entrara em contacto no tempo mais breve possível para passar os restantes das informações</p>
+      </div>
+      <button class="cta">ORÇAMENTO</button>
+    </section>
+  </div>
+
+    <!-- ORÇAMENTO -->
+  <section class="orcamento wrap js-scroll" id="orcamento">
+    <div class="orcamento-titulo grid">
+      <h1 class="titulo">ORÇAMENTO</h1>
+      <h2 class="subtitulo">Não perca tempo, digite as moradas e já saiba o valor</h2>
+    </div>
+    <form action="" class="form-recolha form">
+        <h6 class="titulo-form titulo-h6">Morada Recolha</h6>
+        <label for="lougradoro" class="linha2">Lougradoro</label>
+        <input type="text" name="lougradoro" id="lougradoro" class="linha3">
+        <label for="numero" class="linha2">Numero</label>
+        <input type="text" name="numero" id="numero" class="linha3">
+        <label for="cidade" class="linha4">Cidade</label>
+        <input type="text" name="cidade" id="cidade" class="linha5">
+        <label for="codigo-postal" class="linha4">Codigo Postal</label>
+        <input type="number" id="codigo-postal" class="linha5">
+        <button class="cta calcular">CALCULAR</button>
+    </form>
+    <form action="" class="form-entrega form">
+        <h6 class="titulo-form titulo-h6">Morada Entrega</h6>
+        <label for="lougradoro-recolha" class="linha2">Lougradoro</label>
+        <input type="text" name="lougradoro-recolha" id="lougradoro-recolha" class="linha3">
+        <label for="numero-recolha" class="linha2">Numero</label>
+        <input type="text" name="numero-recolha" id="numero-recolha" class="linha3">
+        <label for="cidade-recolha" class="linha4">Cidade</label>
+        <input type="text" name="cidade-recolha" id="cidade-recolha" class="linha5">
+        <label for="codigo-postal-recolha" class="linha4">Codigo Postal</label>
+        <input type="number" id="codigo-postal-recolha" class="linha5">
+        <button class="adicionar"></button>
+    </form>
+    <div class="mapa">
+      <h6 class="titulo-mapa titulo-h6">Rota da Entrega</h6>
+      <img src="img/fotos/mapa.jpg.png" alt="">
+    </div>
+    <div class="detalhes">
+      <h6 class="titulo-detalhes titulo-h6">Detalhes do Orçamento</h6>
+      <div class="info-detalhes">
+        <p>Distancia:</p>
+        <p>Nº Paradas:</p>
+        <p>Total:</p>
+      </div>
+      <h6 class="titulo-h6">Agendar Encomenda?</h6>
+      <div class="btns-detalhes">
+        <button class="cta">CONFIRMAR</button>
+        <button class="cancelar">CANCELAR</button>
+      </div>
+    </div>
+  </section> 
+
+  <!-- FAQ -->
+  <div class="bg-cinza-claro">
+    <section class="faq wrap2 wrap3 js-scroll2" id="faq">
+      <div class="faq-titulo grid">
+        <h1 class="titulo">FAQ</h1>
+        <h2 class="subtitulo">Perguntas Frequentes</h2>
+      </div>
+      <dl class="lista-faq01">
+        <dt class="titulo-h6" data-accordion="titulo">Como é calculado o valor da entrega ?<span class="seta-baixo" data-accordion="seta">▼</span></dt>
+        <dd class="" data-accordion="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eveniet. Possimus quasi ullam est neque. Facere error dolor mollitia totam?</dd>
+        <dt class="titulo-h6" data-accordion="titulo">Tem limite de quilômetros a entrega ?<span class="seta-baixo" data-accordion="seta">▼</span></dt>
+        <dd data-accordion="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad blanditiis facere, pariatur impedit earum magnam magni?</dd>
+        <dt class="titulo-h6" data-accordion="titulo">Posso enviar qualquer coisa ?<span class="seta-baixo" data-accordion="seta">▼</span></dt>
+        <dd data-accordion="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe esse non quasi? Doloribus, natus id expedita repellendus debitis nam, beatae sequi repudiandae consectetur aut perspiciatis odio.</dd>
+      </dl>
+      <dl class="lista-faq02">
+        <dt class="titulo-h6" data-accordion="titulo">O valor muda se estiver chovendo ?<span class="seta-baixo" data-accordion="seta" data-accordion="seta">▼</span></dt>
+        <dd data-accordion="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus et adipisci non id accusantium.</dd>
+        <dt class="titulo-h6" data-accordion="titulo">E se perderem minha encomenda?<span class="seta-baixo" data-accordion="seta">▼</span></dt>
+        <dd data-accordion="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt dolorem laudantium, accusantium autem alias quo tenetur suscipit voluptates dicta tempora consectetur odio inventore veritatis assumenda distinctio!</dd>
+        <dt class="titulo-h6" data-accordion="titulo">Formas de pagamento ?<span class="seta-baixo" data-accordion="seta">▼</span></dt>
+        <dd class="" data-accordion="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, voluptatibus ad. Repellendus dignissimos ipsum cupiditate amet accusamus aut ex illo.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, qui.</dd>
+      </dl>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="bg-dark-blue">
+    <footer class="wrap js-scroll">
+      <div class="grid">
+        <h1 class="titulo titulo-footer">CONTACTO</h1>
+        <h2 class="subtitulo subtitulo-footer">Horário de Atendimento Seg à Sex - 08:00 às 16:00</h2>
+        <p class="sinal-txt"><span class="sinal" data-semana="1,2,3,4,5" data-horario="8,16"></span></p>
+      </div>
+      <div class="info-contacto grid">
+        <a href="#" class="email">contacto@2fast.com</a>
+        <a href="#" class="telefone">+351 999 888 777</a>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
